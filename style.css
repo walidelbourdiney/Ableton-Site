@@ -11,8 +11,8 @@
 
 /* Reset and normalize */
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -31,10 +31,15 @@ body {
 
 /* Utility classes */
 .container {
-  width: 80%;
-  max-width: 1200px;
+  width: 85%;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  background-color: #ffffff;
+  border-radius: 5px;
+  backdrop-filter: blur(7px) saturate(117%);
+  -webkit-backdrop-filter: blur(7px) saturate(117%);
+  background-color: rgba(219, 222, 226, 0.199);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .flex {
@@ -101,4 +106,98 @@ footer {
     width: 100%;
     padding: 0 1rem;
   }
+}
+
+/* Header styling */
+header {
+  padding: 20px 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+}
+
+header .left ul {
+  display: flex;
+  gap: 1.5rem; /* Spacing between menu items */
+  list-style: none;
+}
+
+header .left ul li a {
+  text-decoration: none;
+  /* font-size: 0.9rem; */
+  color: #000000; /* Black for text */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header .left ul li a:hover {
+  color: var(--primary-dark); /* Hover color from palette */
+}
+body > header > nav > div.left > ul > li:nth-child(9) > a {
+  color: var(--primary-dark);
+}
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Spacing between right-side links */
+}
+
+header .right a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header .right a:nth-child(1) {
+  color: var(--primary-dark); /* Bright blue for "Try Live" */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+header .right a:nth-child(2) {
+  color: var(--text-color); /* Regular text color */
+  font-size: 0.9em;
+}
+
+.hero {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.info {
+  width: 50%;
+  line-height: 2em;
+  font-size: 1em;
+}
+.blue {
+  color: var(--text-color2);
+  cursor: pointer;
+}
+.logoFly {
+  color: var(--primary-dark);
+  font-size: 10em;
+  font-weight: 900;
+  font-family: monospace;
+  position: absolute;
+  top: 0%;
 }
