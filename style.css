@@ -1,0 +1,104 @@
+/* Define color palette variables */
+:root {
+  --primary-light: #fbffa7;
+  --primary-dark: #ff764d;
+  --secondary-light: #b1c5ff;
+  --secondary-dark: #d5b3ff;
+  --accent: #b6ffc0;
+  --text-color: #000000;
+  --text-color2: #0000ff; /* Bright blue */
+}
+
+/* Reset and normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Adjust for base font scaling */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Replace with your preferred font */
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility classes */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-dark);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-dark);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
