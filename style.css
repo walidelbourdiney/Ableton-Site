@@ -240,9 +240,84 @@ header .right a:nth-child(2) {
   width: 50%;
   border-radius: 10px;
 }
+footer .footer-infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+}
 footer ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Spacing between menu items */
+  gap: 0.75rem; /* Spacing between menu items */
   list-style: none;
+}
+body > footer > div > div > ul > li:nth-child(4) img {
+  width: 25px;
+  margin-right: 5px;
+  transition: all 200ms ease-in-out;
+}
+body > footer > div > div > ul > li:nth-child(4) img:hover {
+  width: 50px;
+}
+footer h2 {
+  font-size: 3rem;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+body > footer > div > div > ul > li a:hover {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+.footer-info h3 {
+  margin-left: 40px;
+}
+form .signup-input {
+  display: flex;
+}
+form input {
+  width: 375px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0.5px solid var(--primary-dark);
+}
+.selectors {
+  display: flex;
+  gap: 10px; /* Space between the dropdowns */
+}
+
+.selectors select {
+  width: 150px; /* Set a consistent width */
+  padding: 5px;
+  font-size: 0.9rem;
+  background-color: #f3f3f3; /* Light gray background */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 4px;
+  appearance: none; /* Removes default dropdown arrow styling */
+  cursor: pointer;
+}
+.language-location {
+}
+
+.selectors select:focus {
+  outline: none;
+  border-color: #000; /* Highlight border on focus */
+}
+.language-location {
+  margin-left: 35px;
+}
+body > footer > nav > div.left > ul {
+  display: flex;
+  flex-direction: row;
+}
+footer nav {
+  font-size: smaller;
+  justify-content: space-between;
+}
+footer > nav > div.left > ul > li > a:hover {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+footer nav .right .logo svg {
+  height: 1.5rem;
+}
+footer nav .right {
 }
