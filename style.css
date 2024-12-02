@@ -321,3 +321,162 @@ footer nav .right .logo svg {
 }
 footer nav .right {
 }
+/* General responsiveness */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust header navigation for smaller screens */
+@media (max-width: 1024px) {
+  header nav {
+    flex-wrap: wrap;
+  }
+
+  header .left ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header .right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Stack hero section elements for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .logoFly {
+    font-size: 4rem;
+    top: 10%;
+  }
+}
+
+/* Adjust pictures section */
+@media (max-width: 768px) {
+  .pictures {
+    background-color: #eeeeef;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    position: relative;
+  }
+  .pictures .right {
+    width: 70%;
+    background-color: var(--primary-light);
+  }
+  .pictures .left {
+    width: 30%;
+    background-color: #eeeeef;
+  }
+  .pictures > .pic1 {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 70%;
+  }
+  .pictures > .pic2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .pictures img {
+    border-radius: 10px;
+  }
+}
+
+/* Introduction section */
+@media (max-width: 768px) {
+  .introduction iframe {
+    width: 90%;
+    height: auto;
+  }
+
+  .introduction h2,
+  .introduction p {
+    margin: 0 10px;
+  }
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+  footer .footer-infos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  footer .footer-info,
+  form {
+    text-align: center;
+  }
+
+  form .signup-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .language-location {
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+/* Fine-tune for very small devices */
+@media (max-width: 480px) {
+  header .left ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .pictures {
+    background-color: #eeeeef;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    position: relative;
+  }
+  .pictures .right {
+    width: 70%;
+    background-color: var(--primary-light);
+  }
+  .pictures .left {
+    width: 30%;
+    background-color: #eeeeef;
+  }
+  .pictures > .pic1 {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 70%;
+  }
+  .pictures > .pic2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  footer h2 {
+    font-size: 2rem;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
